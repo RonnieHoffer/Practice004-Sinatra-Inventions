@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>Add an Invention</title>
+</head>
+<body>
+<h1>Add a new invention to the list</h1>
+
+<form action="/addNewInvention" method="POST">
+    <label for="invention">Invention</label>
+    <input type="text" id="invention" name="invention" placeholder="Please enter the name of the invention">
+
+    <label for="inventor">Inventor</label>
+    <input type="text" id="inventor" name="inventor" placeholder="Please enter the name of the inventor">
+
+    <label for="year">Year</label>
+    <input type="integer" id="year" name="year" placeholder="Please enter the year it was invented">
+
+    <input type="submit" value="Add invention to list">
+</form>
+
+</body>
+</html>
