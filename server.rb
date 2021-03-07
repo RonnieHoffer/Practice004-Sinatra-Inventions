@@ -20,7 +20,15 @@ get '/newInvention' do
 end
 
 post '/addNewInvention' do
-    "<h2>#{params}</h2>"
+    # "<h2>#{params}</h2>"
     inventions.push(params)
     redirect to ('/inventions')
+end
+
+get '/editInvention' do
+    "<h1>Edit invention</h1>"
+end
+
+get '/deleteInvention' do
+    "<h1>Delete invention</h1>"
 end
